@@ -15,10 +15,11 @@ body {
 
 .header {
     flex: 0 1 auto;
-    padding: 8px;
     background-color: #1F2937;
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -26,14 +27,13 @@ body {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
-    margin-left: 200px;
+    margin-right: 436px;
     font-weight: 900;
 }
 
 ul {
     list-style-type: none;
     display: flex;
-    margin-right: 200px;
     gap: 16px;
 }
 
@@ -43,41 +43,120 @@ a {
 }
 
 .right-links {
-    margin-left: auto;
     font-size: 18px;
 }
 
 .box {
     display: flex;
     flex-direction: column;
-    height: 100%
+    height: 100%;
+    background-color: #1F2937;
 }
 
 .hero {
-    background-color: #1F2937;
-    padding-left: 200px;
-    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
     flex: 1 1 auto;
 }
 
-.button {
+.content {
     display: flex;
-    max-width: 64px;
+    flex: 1 0 auto;
+    margin-left: auto;
+}
+button {
+    display: flex;
+    width: 128px;
+    height: 32px;
+    background-color: #3882F6;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
 }
 
-img {
-    width: 200px;
-    height: 100px;
-    flex: 1 0 auto;
+.hero img {
+   min-width: 500px;
+   min-height: 200px; 
+   max-width: 500px;
+   max-height: 300px;
+   background-color: grey;
+   margin-top: 36px;
+   margin-left: 36px;
+   border-radius: 12px;
+   flex: 0 0 auto;
 }
 
 image {
-    display: flex;
-    flex: 1 0 auto;
-    width: 200px;
-    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    flex: 0 0 auto;
 }
 
 .content {
     flex: 1 1 auto;
+    margin-top: 128px;
+    margin-left: auto;
+}
+
+.hero-subtext {
+    max-width: 400px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.content .text {
+    max-height: 200px;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.second-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 0 auto;
+}
+
+h2 {
+    align-self: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin: 64px auto 64px auto;
+}
+
+.second-box .box-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    max-width: 164px;
+    max-height: 342px;
+    font-size: 18px;
+    text-align: center;
+    color: grey;
+}
+
+.info img {
+    min-width: 164px;
+    min-height: 164px;
+    border: 4px solid #3882F6;
+    border-radius: 12px;
 }
