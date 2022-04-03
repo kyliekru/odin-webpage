@@ -28,12 +28,13 @@ body {
   top: 0;
   bottom: 0;
   z-index: -1;
+ 
 }
 
 body {
     background-image: url('images/galaxy.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed, scroll;
+
     background-size: cover;
 }
 
@@ -41,8 +42,7 @@ body {
     flex: 0 1 auto;
     display: flex;
     align-items: flex-end;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 16px auto 16px auto;
 
 }
 
@@ -50,14 +50,14 @@ body {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
-    margin-right: 414px;
+    margin-right: 700px;
     font-weight: 900;
 }
 
 ul {
     list-style-type: none;
     display: flex;
-    gap: 16px;
+    gap: 32px;
     margin-bottom: 0px;
 }
 
@@ -81,6 +81,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     flex: 1 1 auto;
+    margin-bottom: 64px;
 }
 
 
@@ -88,13 +89,17 @@ button {
     display: flex;
     width: 128px;
     height: 32px;
-    background-color: #3882F6;
+    background-color: rgb(0, 0, 0, 0.25);
     color: white;
     align-items: center;
     justify-content: center;
     font-size: 18px;
     font-weight: 700;
     border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    cursor: pointer;
 }
 
 .hero img {
@@ -126,14 +131,16 @@ button {
     align-items: center;
     justify-content: center;
     border: 2px rgb(255, 255, 255, 0.5);
+    box-shadow: 5px 10px 4px 2px rgb(4, 12, 118, 0.6);
     border-radius: 64px;
-    background-color: rgb(255, 255, 255, 0.25);
+
+    background-color: rgb(4, 12, 118, 0.4);
 }
 
 .hero-subtext {
     max-width: 500px;
     font-size: 18px;
-    color: #E5E7EB;
+    color: white;
     margin-top: 6px;
     margin-right: 0px;
 }
@@ -142,8 +149,8 @@ button {
     max-height: 200px;
     max-width: 475px;
     margin-right: 36px;
-    align-self: flex-start;
-    margin-top: 32px;
+    align-self: center;
+    text-align: center;
 }
 
 h1 {
@@ -161,6 +168,9 @@ h1 {
     height: 100%;
     flex: 1 1 auto;
     align-items: center;
+    background: rgb(0, 0, 0, 0.7);
+    min-height: 600px;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, 0.7);
 }
 
 h2 {
@@ -169,39 +179,69 @@ h2 {
     font-size: 36px;
     font-weight: 900;
     color: white;
-    margin: 64px auto 64px auto;
+    margin: 64px auto 32px auto;
 }
 
 .second-box .box-cards {
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 255, 255, 0.25);
+    
     min-width: 1200px;
+    min-height: 290px;
     border: 2px rgb(255, 255, 255, 0.25);
     border-radius: 64px;
+    
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
     gap: 64px;
-    margin: 36px auto 0px auto;
+    margin: 6px auto 0px auto;
+}
+
+.type {
+    font-family: 'RobotoI';
+    font-size: 22px;
+}
+
+.info p {
+    font-family: 'RobotoB';
+    padding: 4px;
 }
 
 .info {
-    max-width: 164px;
-    max-height: 342px;
+    max-width: 184px;
+    min-height: 220px;
     font-size: 18px;
     text-align: center;
     color: white;
 }
 
 .info img {
-    min-width: 164px;
-    min-height: 164px;
-    border: 4px solid #3882F6;
+    max-width: 184px;
+    max-height: 184px;
+    min-width: 184px;
+    min-height: 184px;
+    border: 3px solid black;
     border-radius: 12px;
 }
+
+.info .text-container {
+    display: none;
+    position: absolute;
+    max-width: 184px;
+    max-height: 148px;
+    margin-top: 16px;
+}
+
+.info:hover .text-container {
+    display: block;
+    background-color: rgb(0, 0, 60, 0.4);
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
 
 .third-box {
     display: flex;
@@ -221,7 +261,7 @@ h2 {
     max-width: 800px;
     font-weight: 100;
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
 }
 
 .source {
@@ -230,7 +270,7 @@ h2 {
     font-family: 'RobotoB';
     font-size: 18px;
     font-weight: 700;
-    margin-top: 0px;
+    margin-top: 12px;
     color: white;
 }
 
@@ -238,15 +278,16 @@ h2 {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    background-color: white;
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
 .flag {
     margin: 64px auto 64px auto;
-    background-color: #3882F6;
+    background-color: black;
     display: flex;
     min-width: 1000px;
     border-radius: 12px;
+    border: 2px solid white;
 }
 
 .flag .content {
@@ -276,7 +317,6 @@ h3 {
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
-    background-color: #1F2937;
 }
 
 .footer-text {
