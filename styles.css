@@ -18,6 +18,18 @@ body {
     margin: 0;
 }
 
+#background {
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 body {
     background-image: url('images/galaxy.jpg');
     background-repeat: no-repeat;
@@ -148,7 +160,7 @@ h1 {
     flex-direction: column;
     height: 100%;
     flex: 1 1 auto;
-    background-color: white;
+    align-items: center;
 }
 
 h2 {
@@ -156,20 +168,24 @@ h2 {
     font-family: 'RobotoB';
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
+    color: white;
     margin: 64px auto 64px auto;
 }
 
 .second-box .box-cards {
     display: flex;
     flex-direction: row;
+    background-color: rgb(255, 255, 255, 0.25);
+    min-width: 1200px;
+    border: 2px rgb(255, 255, 255, 0.25);
+    border-radius: 64px;
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
     gap: 64px;
-    margin: 0 auto 96px auto;
+    margin: 36px auto 0px auto;
 }
 
 .info {
@@ -177,7 +193,7 @@ h2 {
     max-height: 342px;
     font-size: 18px;
     text-align: center;
-    color: grey;
+    color: white;
 }
 
 .info img {
