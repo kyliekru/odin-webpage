@@ -18,11 +18,17 @@ body {
     margin: 0;
 }
 
+body {
+    background-image: url('images/galaxy.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
+    background-size: cover;
+}
+
 .header {
     flex: 0 1 auto;
-    background-color: #1F2937;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     margin-left: auto;
     margin-right: auto;
 
@@ -40,6 +46,7 @@ ul {
     list-style-type: none;
     display: flex;
     gap: 16px;
+    margin-bottom: 0px;
 }
 
 a {
@@ -55,7 +62,6 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #1F2937;
     align-items: center;
 }
 
@@ -85,15 +91,15 @@ button {
    max-width: 500px;
    max-height: 300px;
    background-color: grey;
-   margin-top: 36px;
-   margin-left: 36pxpx;
+   margin-left: 36px;
+   border: 2px solid white;
    border-radius: 12px;
    flex: 0 0 auto;
 }
 
-image {
-    min-width: 200px;
-    min-height: 200px;
+.image {
+    max-width: 500px;
+    max-height: 300px;
     flex: 0 0 auto;
 }
 
@@ -102,7 +108,14 @@ image {
     flex: 1 1 auto;
     margin-left: auto;
     margin-top: 32px;
-    margin-bottom: 96px;
+    margin-bottom: 32px;
+    min-height: 381px;
+    min-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    border: 2px rgb(255, 255, 255, 0.5);
+    border-radius: 64px;
+    background-color: rgb(255, 255, 255, 0.25);
 }
 
 .hero-subtext {
@@ -117,6 +130,8 @@ image {
     max-height: 200px;
     max-width: 475px;
     margin-right: 36px;
+    align-self: flex-start;
+    margin-top: 32px;
 }
 
 h1 {
@@ -133,6 +148,7 @@ h1 {
     flex-direction: column;
     height: 100%;
     flex: 1 1 auto;
+    background-color: white;
 }
 
 h2 {
@@ -176,7 +192,6 @@ h2 {
     flex-direction: column;
     height: 100%;
     flex: 0.75 1 auto;
-    background-color: #E5E7EB;
 }
 
 .third-box .content {
@@ -189,7 +204,7 @@ h2 {
     font-style: italic;
     max-width: 800px;
     font-weight: 100;
-    color: #1F2937;
+    color: white;
     margin-bottom: 0px;
 }
 
@@ -200,12 +215,14 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     margin-top: 0px;
+    color: white;
 }
 
 .fourth-box {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    background-color: white;
 }
 
 .flag {
